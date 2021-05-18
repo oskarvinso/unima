@@ -645,8 +645,8 @@ class PatientCRUDComponent {
         // servidores Backend disponibles:
         // Servidor de prueba en postman https://435daf80-1739-4090-9ef8-d20b100e05af.mock.pstmn.io
         // local http://192.168.0.15:5000/pacientes
-        // aws http://18.218.109.116/pacientes
-        this.RestService.post('pacientes', {
+        // aws http://18.218.109.116/pacientes    or   http://ec2-18-218-109-116.us-east-2.compute.amazonaws.com/
+        this.RestService.post('http://ec2-18-218-109-116.us-east-2.compute.amazonaws.com/pacientes', {
             fullName: this.form.value.fullName,
             IdPte: this.form.value.IdPte,
             phone: this.form.value.phone,
