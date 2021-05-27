@@ -1,0 +1,42 @@
+/* body{
+    background-color: black;
+    color: green;
+} */
+
+
+/* Suffix this section at the end of your styles.css for toogling between @media screen and @media print mode */
+
+
+/*############################################################################################################*/
+
+
+app-med-repo {
+    /* hide the printing component from @media screen */
+    display: none;
+  }
+
+
+@media print {
+    /* invert the display (show/hide) properties of the main */
+    /* aplication component and the printing component       */
+  
+    app-med-repo {
+      display: block;
+    }
+  
+    .hideme {
+      display: none;
+    }
+
+    app-patient-crud {
+        display: none;
+      }
+
+  }
+
+
+/*#############################################################################################################*/
+  
+  
+
+/*# sourceMappingURL=styles.css.map*/
